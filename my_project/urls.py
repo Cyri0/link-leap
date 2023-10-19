@@ -16,7 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from shorturl import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('short/<int:short>', views.redirectToLongURL),
 ]
+# http://localhost:8000/short/1
