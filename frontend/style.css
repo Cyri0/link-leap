@@ -1,0 +1,27 @@
+body{
+    margin: auto;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+}
+
+#urls{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+a{
+    display: block;
+    padding: 20px 40px;
+    background-color: darkred;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}

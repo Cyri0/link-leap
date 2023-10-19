@@ -21,5 +21,6 @@ from shorturl import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('short/<int:short>', views.redirectToLongURL),
+    path('api/', views.returnAllURLs)
 ]
-# http://localhost:8000/short/1
+# http://localhost:8000/api/
